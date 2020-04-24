@@ -375,7 +375,7 @@
 				<data>BAClPg==</data>
 				<key>device-id</key>
 				<data>pT4ABA==</data>
-				<key>AAPL00,override-no-connect</key>
+				<key>#AAPL00,override-no-connect</key>
 				<data>AP///////wAOb20HAAAAABQdAQSlHRJ44u6Vo1RMmSYPUFQAAAABAQEBAQEBAQEBAQEBAQEB7GgAoKBALmAwIDYAHrMQAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gBDU09UIFQzCiAgICAgAAAA/gBNTkQzMDdEQTEtMgogAEg=</data>
 				<key>dpcd-max-link-rate</key>
 				<data>CgAAAA==</data>
@@ -395,16 +395,12 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AAAAAw==</data>
 				<key>framebuffer-stolenmem</key>
-				<data>AAAABA==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
-				<key>framebuffer-cursormem</key>
-				<data>AAAAAw==</data>
+				<data>AAAwAQ==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
@@ -598,7 +594,7 @@
 				<key>BundlePath</key>
 				<string>BrcmBluetoothInjector.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmBluetoothInjector</string>
 				<key>PlistPath</key>
@@ -608,7 +604,7 @@
 				<key>BundlePath</key>
 				<string>BrcmFirmwareData.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmFirmwareData</string>
 				<key>PlistPath</key>
@@ -618,7 +614,7 @@
 				<key>BundlePath</key>
 				<string>BrcmPatchRAM3.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmPatchRAM3</string>
 				<key>PlistPath</key>
@@ -661,6 +657,62 @@
 		<array>
 			<dict>
 				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>DVMTpatch-10.15-10.15.1-10.15.2-10.15.3</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>D4KnAwAA</data>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleIntelCFLGraphicsFramebuffer</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string>19.3.0</string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>Replace</key>
+				<data>D4IAAAAA</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>DVMTpatch-10.15.4</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>D4KPAwAA</data>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleIntelCFLGraphicsFramebuffer</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>19.4.0</string>
+				<key>Replace</key>
+				<data>D4IAAAAA</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Base</key>
 				<string>__ZN8AppleRTC18setupDateTimeAlarmEPK11RTCDateTime</string>
 				<key>Comment</key>
 				<string>Disable RTC wake scheduling</string>
@@ -690,6 +742,14 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
+			<key>AppleCpuPmCfgLock</key>
+			<false/>
+			<key>AppleXcpmCfgLock</key>
+			<true/>
+			<key>AppleXcpmExtraMsrs</key>
+			<true/>
+			<key>AppleXcpmForceBoost</key>
+			<false/>
 			<key>DisableIoMapper</key>
 			<true/>
 		</dict>
@@ -746,7 +806,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 darkwake=0 brcmfx-country=#a</string>
+				<string>keepsyms=1 darkwake=0 brcmfx-country=#a -v</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>nvda_drv</key>
@@ -929,6 +989,8 @@
 		<dict/>
 		<key>Quirks</key>
 		<dict>
+			<key>IgnoreInvalidFlexRatio</key>
+			<true/>
 			<key>RequestBootVarRouting</key>
 			<true/>
 		</dict>
