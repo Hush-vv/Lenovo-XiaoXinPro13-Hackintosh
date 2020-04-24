@@ -375,7 +375,7 @@
 				<data>BAClPg==</data>
 				<key>device-id</key>
 				<data>pT4ABA==</data>
-				<key>#AAPL00,override-no-connect</key>
+				<key>AAPL00,override-no-connect</key>
 				<data>AP///////wAOb20HAAAAABQdAQSlHRJ44u6Vo1RMmSYPUFQAAAABAQEBAQEBAQEBAQEBAQEB7GgAoKBALmAwIDYAHrMQAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gBDU09UIFQzCiAgICAgAAAA/gBNTkQzMDdEQTEtMgogAEg=</data>
 				<key>dpcd-max-link-rate</key>
 				<data>CgAAAA==</data>
@@ -395,12 +395,16 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AAAAAw==</data>
 				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
+				<data>AAAABA==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
+				<key>framebuffer-cursormem</key>
+				<data>AAAAAw==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
@@ -592,19 +596,9 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>AirportBrcmFixup.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirportBrcmFixup</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
 				<string>BrcmBluetoothInjector.kext</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmBluetoothInjector</string>
 				<key>PlistPath</key>
@@ -614,7 +608,7 @@
 				<key>BundlePath</key>
 				<string>BrcmFirmwareData.kext</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmFirmwareData</string>
 				<key>PlistPath</key>
@@ -624,9 +618,19 @@
 				<key>BundlePath</key>
 				<string>BrcmPatchRAM3.kext</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmPatchRAM3</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>AirportBrcmFixup.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportBrcmFixup</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -655,62 +659,6 @@
 		</dict>
 		<key>Patch</key>
 		<array>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>DVMTpatch-10.15-10.15.1-10.15.2-10.15.3</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>D4KnAwAA</data>
-				<key>Identifier</key>
-				<string>com.apple.driver.AppleIntelCFLGraphicsFramebuffer</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MaxKernel</key>
-				<string>19.3.0</string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>Replace</key>
-				<data>D4IAAAAA</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>DVMTpatch-10.15.4</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>D4KPAwAA</data>
-				<key>Identifier</key>
-				<string>com.apple.driver.AppleIntelCFLGraphicsFramebuffer</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string>19.4.0</string>
-				<key>Replace</key>
-				<data>D4IAAAAA</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
 			<dict>
 				<key>Base</key>
 				<string>__ZN8AppleRTC18setupDateTimeAlarmEPK11RTCDateTime</string>
@@ -742,14 +690,6 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
-			<key>AppleCpuPmCfgLock</key>
-			<false/>
-			<key>AppleXcpmCfgLock</key>
-			<true/>
-			<key>AppleXcpmExtraMsrs</key>
-			<true/>
-			<key>AppleXcpmForceBoost</key>
-			<false/>
 			<key>DisableIoMapper</key>
 			<true/>
 		</dict>
@@ -775,6 +715,8 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
+			<key>BootProtect</key>
+			<string>None</string>
 			<key>ExposeSensitiveData</key>
 			<integer>11</integer>
 			<key>ScanPolicy</key>
@@ -841,24 +783,24 @@
 			<key>SystemProductName</key>
 			<string>MacBookAir9,1</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFD77YJMNHP</string>
+			<string>FVFD4YYAMNHP</string>
 			<key>SystemUUID</key>
-			<string>C4E1A2EE-F63C-4EA2-9BC5-0FB3731E17BB</string>
+			<string>2FB16470-55B9-489F-AA42-D379385FF0E8</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>FVF033902GU0000FB</string>
+			<string>FVF030200QX0000CB</string>
 			<key>ROM</key>
-			<data>Q4FEHhe7</data>
+			<data>CJn1X/Do</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookAir9,1</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFD77YJMNHP</string>
+			<string>FVFD4YYAMNHP</string>
 			<key>SystemUUID</key>
-			<string>C4E1A2EE-F63C-4EA2-9BC5-0FB3731E17BB</string>
+			<string>2FB16470-55B9-489F-AA42-D379385FF0E8</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -869,9 +811,9 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>P/+f/wAAAAA=</data>
 			<key>MLB</key>
-			<string>FVF033902GU0000FB</string>
+			<string>FVF030200QX0000CB</string>
 			<key>ROM</key>
-			<data>Q4FEHhe7</data>
+			<data>CJn1X/Do</data>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
@@ -890,7 +832,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-0CFF9C7C2B63DF8D</string>
 			<key>BoardSerialNumber</key>
-			<string>FVF033902GU0000FB</string>
+			<string>FVF030200QX0000CB</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -900,7 +842,7 @@
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>FVFD77YJMNHP</string>
+			<string>FVFD4YYAMNHP</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
@@ -924,9 +866,9 @@
 			<key>SystemSKUNumber</key>
 			<string>Mac-0CFF9C7C2B63DF8D</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFD77YJMNHP</string>
+			<string>FVFD4YYAMNHP</string>
 			<key>SystemUUID</key>
-			<string>C4E1A2EE-F63C-4EA2-9BC5-0FB3731E17BB</string>
+			<string>2FB16470-55B9-489F-AA42-D379385FF0E8</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -987,8 +929,6 @@
 		<dict/>
 		<key>Quirks</key>
 		<dict>
-			<key>IgnoreInvalidFlexRatio</key>
-			<true/>
 			<key>RequestBootVarRouting</key>
 			<true/>
 		</dict>
