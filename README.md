@@ -81,10 +81,9 @@ Lenovo XiaoXinPro13 Hackintosh
  - ### 安装系统时请在BIOS中禁用无线网卡，安装成功后在打开。避免因网卡问题导致安装失败
     - 一些网卡需要屏蔽针脚，方法请自行百度
     
-- ### `CPU多线程(BIOS Hyper)`的`开` 与`关` 和 `config`的`AppleXcpmExtraMsrs`设置不一致时可能导致`-v`引导失败，可尝试
+- ### 打开`CPU多线程(BIOS Hyper)`时可能导致`-v`引导失败，可尝试 （@宪武）
 
-    - BIOS中打开超线程并将`config`的`AppleXcpmExtraMsrs`设置为`YES`
-    - BIOS中关闭超线程并将`config`的`AppleXcpmExtraMsrs`设置为`NO`
+    - `UEFI`-`Quirks`-`ReleaseUsbOwnership`=`YES`
    
 - ### 安装`macOS Catalina10.15.4`过程中可能无法驱动核显，导致引导失败重启回引导页面，临时解决方法
   
