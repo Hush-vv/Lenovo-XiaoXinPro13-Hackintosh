@@ -130,7 +130,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PCI.LPCB-Wake-AOAC.aml</string>
+				<string>SSDT-PCI0.LPCB-Wake-AOAC.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
