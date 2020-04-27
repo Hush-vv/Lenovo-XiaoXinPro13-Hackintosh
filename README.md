@@ -71,7 +71,7 @@ Lenovo XiaoXinPro13 Hackintosh
    
 - 安装`macOS Catalina10.15.4`过程中可能无法驱动核显，导致引导失败重启回引导页面，临时解决方法
   
-- [`DeviceProperties` \ `Add` \ `PciRoot(0x0)/Pci(0x2,0x0)`\ `AAPL,ig-platform-id`=`12345678`](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/16)安装成功后恢复即可
+  - [`DeviceProperties` \ `Add` \ `PciRoot(0x0)/Pci(0x2,0x0)`\ `AAPL,ig-platform-id`=`12345678`](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/16)安装成功后恢复即可
 
 ### 关闭触摸板快捷键
 
