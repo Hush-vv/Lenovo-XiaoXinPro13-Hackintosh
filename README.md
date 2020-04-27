@@ -16,17 +16,6 @@ Lenovo XiaoXinPro13 Hackintosh
 |声卡| Realtek ALC257|
 |网卡| 原装Intel AX201NGW更换为 DW1820A|
 
-      
-## 镜像下载
-  
-   - [[**黑果小兵的部落阁**] :【黑果小兵】原版镜像](https://blog.daliansky.net/categories/下载/镜像/)
-
-## EFI下载
-
-   - [OpenCore](https://github.com/Hush-vv/Lenovo-XiaoXinPro13-Hackintosh/archive/master.zip)
-   
-   - Clover[请移驾daliansky](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
-
 # 使用说明
 
 ## 注意
@@ -109,6 +98,16 @@ Lenovo XiaoXinPro13 Hackintosh
 
 ## 哪些可以工作更好
 - 开启 [HIDPI](https://github.com/xzhih/one-key-hidpi) 来提升系统UI质量, `可能会出现花(黑)屏现象`
+
+## 镜像下载
+  
+   - [[**黑果小兵的部落阁**] :【黑果小兵】原版镜像](https://blog.daliansky.net/categories/下载/镜像/)
+
+## EFI下载
+
+   - [OpenCore](https://github.com/Hush-vv/Lenovo-XiaoXinPro13-Hackintosh/archive/master.zip)
+   
+   - Clover[请移驾daliansky](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
         
 ## 感谢
 -
