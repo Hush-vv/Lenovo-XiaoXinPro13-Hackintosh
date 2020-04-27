@@ -40,18 +40,16 @@ Lenovo XiaoXinPro13 Hackintosh
   - `PciRoot(0x0)/Pci(0x2,0x0)`\ `framebuffer-fbmem` = `00009000`
   - `PciRoot(0x0)/Pci(0x2,0x0)`\ `framebuffer-stolenmem` = `00003001`
   
-- 已解锁BIOS`CFG LOCK`机器可删除以下内容  
-  - `Kernel` \ `Quirks` \ `AppleCpuPmCfgLock`=`NO`
-  - `Kernel` \ `Quirks` \ `AppleXcpmCfgLock`=`YES`
-  - `Kernel` \ `Quirks` \ `AppleXcpmExtraMsrs`=`YES` 
-  - `Kernel` \ `Quirks` \ `AppleXcpmForceBoost`=`NO`
-  - `UEFI` \ `Quirks` \ `IgnoreInvalidFlexRatio`=`YES`
+- 已解锁BIOS`CFG LOCK`机器将以下内容`NO` 即可
+  - `Kernel` \ `Quirks` \ `AppleXcpmCfgLock`=`NO`
+  - `Kernel` \ `Quirks` \ `AppleXcpmExtraMsrs`=`NO` 
     
-- 使用`1820A`网卡的驱动蓝牙和WI-FI将这些`YES`即可
+- 使用`1820A`网卡的驱动蓝牙和WI-FI将这些`YES`即可并 添加 `brcmfx-country=#a`
   - `Kernel` \ `Add` \ `18`\ `Enabled`=`YES`
   - `Kernel` \ `Add` \ `19`\ `Enabled`=`YES`
   - `Kernel` \ `Add` \ `20`\ `Enabled`=`YES`
   - `Kernel` \ `Add` \ `21`\ `Enabled`=`YES`
+  - `NVRAM` \ `Add` \ `boot-args` \ `brcmfx-country=#a`
  
 - 部分`i5`机型可删除以下内容
   - `Kernel` \ `Patch` \ `iten0`
@@ -71,7 +69,7 @@ Lenovo XiaoXinPro13 Hackintosh
    
 - 安装`macOS Catalina10.15.4`过程中可能无法驱动核显，导致引导失败重启回引导页面，临时解决方法
   
-  - [`DeviceProperties` \ `Add` \ `PciRoot(0x0)/Pci(0x2,0x0)`\ `AAPL,ig-platform-id`=`12345678`](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/16)安装成功后恢复即可
+  - `DeviceProperties` \ `Add` \ `PciRoot(0x0)/Pci(0x2,0x0)`\ `AAPL,ig-platform-id`=`12345678` 安装成功后恢复即可
 
 ### 关闭触摸板快捷键
 
@@ -88,8 +86,8 @@ Lenovo XiaoXinPro13 Hackintosh
 <details>
 <summary>关于 小新PRO13(2019/2020/13S Intel版本) 没有S3睡眠延展</summary>
 <p>D0 就是正常工作状态，S0 是 D0 的电源管理，S0睡眠应该是不存在的，说 S0 睡眠，本质就是 D0 状态下进入了空闲，所以有了空闲状态下的电源管理，这个机器没有 S3睡眠，没有设计相关硬件</p>
-<p>但因 ACPI 有了 S3才导致苹果试图进入睡眠，但因缺少必须的硬件最终失败，对于 Windows 不妨碍</p>更详细的说明移步<a href="https://github.com/daliansky/OC-little/tree/master/01-%E5%85%B3%E4%BA%8EAOAC" target="_blank">OC-little</a>      
-</details>实测选择质量好的SSD或无线网卡可有效延长待机时间。如：三星970EVO+DW1820A盒盖一小时耗电仅需0.88%
+<p>但因 ACPI 有了 S3才导致苹果试图进入睡眠，但因缺少必须的硬件最终失败，对于 Windows 不妨碍</p>更详细的说明移步<a href="https://github.com/daliansky/OC-little/tree/master/01-%E5%85%B3%E4%BA%8EAOAC" target="_blank">OC-little</a> <p>实测选择质量好的SSD或无线网卡可有效延长待机时间。如：三星970EVO+DW1820A盒盖一小时耗电仅需0.88%      
+</details>
 
 ### 哪些可以工作更好
 - 开启 [HIDPI](https://github.com/xzhih/one-key-hidpi) 来提升系统UI质量, `可能会出现花(黑)屏现象`
