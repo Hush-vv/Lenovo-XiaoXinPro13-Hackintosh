@@ -138,7 +138,7 @@
 				<key>Comment</key>
 				<string>SSDT-USBX.aml</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>SSDT-USBX.aml</string>
 			</dict>
@@ -1065,8 +1065,28 @@
 		<false/>
 		<key>DataHub</key>
 		<dict>
+			<key>ARTFrequency</key>
+			<integer>0</integer>
 			<key>BoardProduct</key>
 			<string>Mac-0CFF9C7C2B63DF8D</string>
+			<key>BoardRevision</key>
+			<data>Bw==</data>
+			<key>DevicePathsSupported</key>
+			<integer>1</integer>
+			<key>FSBFrequency</key>
+			<integer>0</integer>
+			<key>InitialTSC</key>
+			<integer>0</integer>
+			<key>PlatformName</key>
+			<string>platform</string>
+			<key>SmcBranch</key>
+			<data>ajEzOF85AAA=</data>
+			<key>SmcPlatform</key>
+			<data>ajEzOAAAAAA=</data>
+			<key>SmcRevision</key>
+			<data>AkYPAAAS</data>
+			<key>StartupPowerEvents</key>
+			<integer>0</integer>
 			<key>SystemProductName</key>
 			<string>MacBookAir9,1</string>
 			<key>SystemSerialNumber</key>
@@ -1076,6 +1096,8 @@
 		</dict>
 		<key>Generic</key>
 		<dict>
+			<key>AdviseWindows</key>
+			<false/>
 			<key>MLB</key>
 			<string>FVF030200QX0000CB</string>
 			<key>ROM</key>
@@ -1107,15 +1129,15 @@
 			<key>BIOSReleaseDate</key>
 			<string>03/17/2020</string>
 			<key>BIOSVendor</key>
-			<string></string>
+			<string>Apple Inc.</string>
 			<key>BIOSVersion</key>
 			<string>1037.100.359.0.0</string>
 			<key>BoardAssetTag</key>
 			<string></string>
 			<key>BoardLocationInChassis</key>
-			<string>Part Component</string>
-			<key>BoardManufacturer</key>
 			<string></string>
+			<key>BoardManufacturer</key>
+			<string>Apple Inc.</string>
 			<key>BoardProduct</key>
 			<string>Mac-0CFF9C7C2B63DF8D</string>
 			<key>BoardSerialNumber</key>
@@ -1123,11 +1145,11 @@
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
-			<string>1.0</string>
+			<string>MacBookAir9,1</string>
 			<key>ChassisAssetTag</key>
-			<string>Air-Enclosure</string>
-			<key>ChassisManufacturer</key>
 			<string></string>
+			<key>ChassisManufacturer</key>
+			<string>Apple Inc.</string>
 			<key>ChassisSerialNumber</key>
 			<string>FVFD4YYAMNHP</string>
 			<key>ChassisType</key>
@@ -1147,11 +1169,13 @@
 			<key>SystemFamily</key>
 			<string>MacBook Air</string>
 			<key>SystemManufacturer</key>
-			<string></string>
+			<string>Apple Inc.</string>
 			<key>SystemProductName</key>
 			<string>MacBookAir9,1</string>
-			<key>SystemSKUNumber</key>
+			<key>#SystemSKUNumber</key>
 			<string>Mac-0CFF9C7C2B63DF8D</string>
+			<key>SystemSKUNumber</key>
+			<string></string>
 			<key>SystemSerialNumber</key>
 			<string>FVFD4YYAMNHP</string>
 			<key>SystemUUID</key>

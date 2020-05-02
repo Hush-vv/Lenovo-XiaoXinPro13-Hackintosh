@@ -40,16 +40,16 @@ Lenovo XiaoXinPro13 Hackintosh
   - `PciRoot(0x0)/Pci(0x2,0x0)`\ `framebuffer-fbmem` = `00009000`
   - `PciRoot(0x0)/Pci(0x2,0x0)`\ `framebuffer-stolenmem` = `00003001`
   
-- 已解锁BIOS`CFG LOCK`机器将以下内容`NO` 即可
-  - `Kernel` \ `Quirks` \ `AppleXcpmCfgLock`=`NO`
-  - `Kernel` \ `Quirks` \ `AppleXcpmExtraMsrs`=`NO` 
+- 已解锁BIOS`CFG LOCK`机器将以下内容`False` 即可
+  - `Kernel` \ `Quirks` \ `AppleXcpmCfgLock`=`False`
+  - `Kernel` \ `Quirks` \ `AppleXcpmExtraMsrs`=`False` 
     
-- 使用`1820A`网卡的驱动蓝牙和WI-FI将这些`YES`即可并 添加 `brcmfx-country=#a`
-  - `Kernel` \ `Add` \ `18`\ `Enabled`=`YES`
-  - `Kernel` \ `Add` \ `19`\ `Enabled`=`YES`
-  - `Kernel` \ `Add` \ `20`\ `Enabled`=`YES`
-  - `Kernel` \ `Add` \ `21`\ `Enabled`=`YES`
-  - `NVRAM` \ `Add` \ `boot-args` \ `brcmfx-country=#a`
+- 使用`1820A`网卡的驱动蓝牙和WI-FI将这些`True`即可 并添加 `brcmfx-country=#a`
+  - `Kernel` \ `Add` \ `18`\ `Enabled`=`True`
+  - `Kernel` \ `Add` \ `19`\ `Enabled`=`True`
+  - `Kernel` \ `Add` \ `20`\ `Enabled`=`True`
+  - `Kernel` \ `Add` \ `21`\ `Enabled`=`True`
+  - `NVRAM` \ `Add` \ `7C436110-AB2A-4BBB-A880-FE41995C9F82` \ `boot-args` \ `brcmfx-country=#a`
  
 - 部分`i5`机型可删除以下内容
   - `Kernel` \ `Patch` \ `item0`
@@ -59,13 +59,13 @@ Lenovo XiaoXinPro13 Hackintosh
 
 ### 安装失败注意
 
-- 强烈建议解锁BIOS`CFG LOCK` `DVMT`以避免安装时卡住。解锁方法请参考群文件`小新PRO13修改DVMT说明`
- 
+- 强烈建议解锁BIOS`CFG LOCK` `DVMT`以避免安装时卡住。解锁方法请参考群文件`小新PRO13修改DVMT说明` 
+
 - 安装系统时请在BIOS中禁用无线网卡，安装成功后在打开。避免因网卡问题导致安装失败
   - 一些网卡需要屏蔽针脚，方法请自行百度
     
 - 打开`CPU多线程(BIOS Hyper)`时可能导致`-v`引导失败，可尝试 （@宪武）
-  - `UEFI`-`Quirks`-`ReleaseUsbOwnership`=`YES`
+  - `UEFI`-`Quirks`-`ReleaseUsbOwnership`=`True`
    
 - 安装`macOS Catalina10.15.4`过程中可能无法驱动核显，导致引导失败重启回引导页面，临时解决方法
   
@@ -86,7 +86,8 @@ Lenovo XiaoXinPro13 Hackintosh
 <details>
 <summary>关于 小新PRO13(2019/2020/13S Intel版本) 没有S3睡眠延展</summary>
 <p>D0 就是正常工作状态，S0 是 D0 的电源管理，S0睡眠应该是不存在的，说 S0 睡眠，本质就是 D0 状态下进入了空闲，所以有了空闲状态下的电源管理，这个机器没有 S3睡眠，没有设计相关硬件</p>
-<p>但因 ACPI 有了 S3才导致苹果试图进入睡眠，但因缺少必须的硬件最终失败，对于 Windows 不妨碍</p>更详细的说明移步<a href="https://github.com/daliansky/OC-little/tree/master/01-%E5%85%B3%E4%BA%8EAOAC" target="_blank">OC-little</a> <p>实测选择质量好的SSD或无线网卡可有效延长待机时间。如：三星970EVO+DW1820A盒盖一小时耗电仅需0.88% </p>     
+<p>但因 ACPI 有了 S3才导致苹果试图进入睡眠，但因缺少必须的硬件最终失败，对于 Windows 不妨碍</p>更详细的说明移步<a href="https://github.com/daliansky/OC-little/tree/master/01-%E5%85%B3%E4%BA%8EAOAC" target="_blank">OC-little</a>
+<p>实测选择质量好的SSD或无线网卡可有效延长待机时间。如：三星970EVO+DW1820A盒盖一小时耗电仅需0.88%</p>   
 </details>
 
 ### 哪些可以工作更好
@@ -113,11 +114,11 @@ Lenovo XiaoXinPro13 Hackintosh
     ......
 
 ### QQ群
-- [小新pro黑苹果 946132482](https://jq.qq.com/?_wv=1027&k=5XoGay4)（已满）
+- 小新pro黑苹果 946132482（已满）
     
-- [小新pro13insyde bios研究交流 635160015](https://jq.qq.com/?_wv=1027&k=5R7Zcci)
+- 小新pro13insyde bios研究交流 635160015
         
 
 ### 更新日志  
   
-- [Changelog](https://github.com/Hush-vv/xiaoxing-pro13/blob/master/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97.md)
+- [Changelog](https://github.com/Hush-vv/Lenovo-XiaoXinPro13-Hackintosh/blob/master/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97.md)
