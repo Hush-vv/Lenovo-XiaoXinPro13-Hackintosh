@@ -8,19 +8,27 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>OCPublic-Merge</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-OCPublic-Merge.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-SBUS</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SBUS.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>X86</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-PLUG-_SB.PR00.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>ALS0</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-ALS0.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -32,30 +40,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>EC</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-EC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SBUS</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SBUS.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-MCHC</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-MCHC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-XSPI.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -77,14 +61,6 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-BKeyQ38Q39-LenovoPRO13.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-RTC_Y-AWAC_N.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-RTC_Y-AWAC_N.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -136,14 +112,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-USBX.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-USBX.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-NDGP_OFF-AOAC.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -160,19 +128,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PCI0.LPCB-Wake-AOAC.aml</string>
+				<string>SSDT-GPRW.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PCI0.LPCB-Wake-AOAC.aml</string>
+				<string>SSDT-GPRW.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-GPRW.aml</string>
+				<string>SSDT-PCI0.LPCB-Wake-AOAC.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-GPRW.aml</string>
+				<string>SSDT-PCI0.LPCB-Wake-AOAC.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -471,6 +439,8 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>#AAPL,ig-platform-id</key>
+				<data>EjRWeA==</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>BAClPg==</data>
 				<key>device-id</key>
@@ -503,7 +473,7 @@
 				<data>AAAwAQ==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
-				<key>model</key>
+				<key>#model</key>
 				<string>Intel Iris Plus Graphics 655</string>
 			</dict>
 		</dict>
@@ -634,7 +604,7 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooInput.kext</string>
+				<string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -1172,10 +1142,8 @@
 			<string>Apple Inc.</string>
 			<key>SystemProductName</key>
 			<string>MacBookAir9,1</string>
-			<key>#SystemSKUNumber</key>
-			<string>Mac-0CFF9C7C2B63DF8D</string>
 			<key>SystemSKUNumber</key>
-			<string></string>
+			<string>Mac-0CFF9C7C2B63DF8D</string>
 			<key>SystemSerialNumber</key>
 			<string>FVFD4YYAMNHP</string>
 			<key>SystemUUID</key>

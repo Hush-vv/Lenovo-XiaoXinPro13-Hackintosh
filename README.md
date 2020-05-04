@@ -14,7 +14,7 @@ Lenovo XiaoXinPro13 Hackintosh
 |显卡|Intel HD Graphics CFL CRB|（UHD620）|
 |显示器|13.3 英寸 IPS 2560x1600 华星光电|
 |声卡| Realtek ALC257|
-|网卡| 原装Intel AX201NGW更换为 BCM943602CS|
+|网卡| 原装Intel AX201NGW更换为 BCM94360CS2|
 
 ## 使用说明
 
@@ -63,9 +63,6 @@ Lenovo XiaoXinPro13 Hackintosh
 
 - 安装系统时请在BIOS中禁用无线网卡，安装成功后在打开。避免因网卡问题导致安装失败
   - 一些网卡需要屏蔽针脚，方法请自行百度
-    
-- 打开`CPU多线程(BIOS Hyper)`时可能导致`-v`引导失败，可尝试 （@宪武）
-  - `UEFI`-`Quirks`-`ReleaseUsbOwnership`=`True`
    
 - 安装`macOS Catalina10.15.4`过程中可能无法驱动核显，导致引导失败重启回引导页面，临时解决方法
   
@@ -87,11 +84,11 @@ Lenovo XiaoXinPro13 Hackintosh
 <summary>关于 小新PRO13(2019/2020/13S Intel版本) 没有S3睡眠延展</summary>
 <p>D0 就是正常工作状态，S0 是 D0 的电源管理，S0睡眠应该是不存在的，说 S0 睡眠，本质就是 D0 状态下进入了空闲，所以有了空闲状态下的电源管理，这个机器没有 S3睡眠，没有设计相关硬件</p>
 <p>但因 ACPI 有了 S3才导致苹果试图进入睡眠，但因缺少必须的硬件最终失败，对于 Windows 不妨碍</p>更详细的说明移步<a href="https://github.com/daliansky/OC-little/tree/master/01-%E5%85%B3%E4%BA%8EAOAC" target="_blank">OC-little</a>
-<p>实测选择质量好的SSD或无线网卡可有效延长待机时间。如：三星970EVO+DW1820A盒盖一小时耗电仅需0.88%</p>   
+<p>实测选择省电的SSD可有效延长待机时间。如：三星970EVO+BCM94360CS2并使用SleepWithoutBluetoothAndWifi盒盖一小时耗电仅需0.86%，而西数SN750+BCM94360CS2并使用SleepWithoutBluetoothAndWif则需要3%每小时</p>   
 </details>
 
 ### 哪些可以工作更好
-- 开启 [HIDPI](https://github.com/xzhih/one-key-hidpi) 来提升系统UI质量, `可能会出现花(黑)屏现象`
+- 开启 [HIDPI](https://github.com/xzhih/one-key-hidpi) 来提升系统UI质量, `可能会出现花屏现象`
 
 ### 镜像下载
   
