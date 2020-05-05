@@ -96,7 +96,9 @@ Lenovo XiaoXinPro13 Hackintosh
 
 ### EFI下载
 
-- [OpenCore](https://github.com/Hush-vv/Lenovo-XiaoXinPro13-Hackintosh/archive/master.zip)
+- [OpenCore 0.5.8正式版](https://github.com/Hush-vv/Lenovo-XiaoXinPro13-Hackintosh/releases/download/v1.0/EFI-OC.zip)
+
+- [OpenCore 0.5.9开发版](https://github.com/Hush-vv/Lenovo-XiaoXinPro13-Hackintosh/archive/master.zip)
    
 - Clover[请移驾daliansky](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
         
