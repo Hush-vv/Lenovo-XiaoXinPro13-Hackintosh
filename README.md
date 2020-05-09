@@ -21,6 +21,7 @@ Lenovo XiaoXinPro13 Hackintosh
 ### 注意
 
 - 强烈建议不要使用`OpenCore Configurator`来修改`config.plist` `OpenCore Configurator`更新缓慢与`OpenCore`版本不匹配，推荐使用`ProperTree`   
+  - Win下修改`config.plist`请下载载群文件`ProperTree中文版-WIN`来修改`config.plist`
 - 小新由于安装过程中触摸板可能无法驱动，使用U盘安装macOS会占用仅仅一个USB接口,建议安装之前先买个usb拓展,用于插入鼠标,来进行安装步骤选项设定。
 - 安装或更新系统完成后请使用`终端`输入`sudo kextcache -i /`清理缓存并重启，触控板才能正常使用
 
@@ -35,16 +36,19 @@ Lenovo XiaoXinPro13 Hackintosh
 ### 配置config【重要】
 
 - 已修改BIOS`DVMT`机器可删除以下内容
+
   - `Kernel` \ `Patch` \ `item0`
   - `Kernel` \ `Patch` \ `item1`
   - `PciRoot(0x0)/Pci(0x2,0x0)`\ `framebuffer-fbmem` = `00009000`
   - `PciRoot(0x0)/Pci(0x2,0x0)`\ `framebuffer-stolenmem` = `00003001`
   
 - 已解锁BIOS`CFG LOCK`机器将以下内容`False` 即可
+
   - `Kernel` \ `Quirks` \ `AppleXcpmCfgLock`=`False`
   - `Kernel` \ `Quirks` \ `AppleXcpmExtraMsrs`=`False` 
     
 - 使用`1820A`网卡的驱动蓝牙和WI-FI将这些`True`即可 并添加 `brcmfx-country=#a`
+
   - `Kernel` \ `Add` \ `18`\ `Enabled`=`True`
   - `Kernel` \ `Add` \ `19`\ `Enabled`=`True`
   - `Kernel` \ `Add` \ `20`\ `Enabled`=`True`
@@ -52,6 +56,7 @@ Lenovo XiaoXinPro13 Hackintosh
   - `NVRAM` \ `Add` \ `7C436110-AB2A-4BBB-A880-FE41995C9F82` \ `boot-args` \ `brcmfx-country=#a`
  
 - 部分`i5`机型可删除以下内容
+
   - `Kernel` \ `Patch` \ `item0`
   - `Kernel` \ `Patch` \ `item1`
   - `Kernel`\ `Emulate`\ `Cpuid1Data`
@@ -59,7 +64,7 @@ Lenovo XiaoXinPro13 Hackintosh
 
 ### 安装失败注意
 
-- 强烈建议解锁BIOS`CFG LOCK` `DVMT`以避免安装时卡住。解锁方法请参考群文件`小新PRO13修改DVMT说明` 
+- 强烈建议解锁BIOS`CFG LOCK`、 修改BIOS`DVMT`以避免安装时卡住。解锁方法请参考群文件`小新PRO13修改DVMT说明` 
 
 - 安装系统时请在BIOS中禁用无线网卡，安装成功后在打开。避免因网卡问题导致安装失败
   - 一些网卡需要屏蔽针脚，方法请自行百度
