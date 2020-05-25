@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19F72f</string>
+	<string>19F94a</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -54,7 +54,7 @@
 					AwAAAA==
 					</data>
 					<key>Codec</key>
-					<string>Realtek ALC257 for Lenovo XiaoXin Pro 2019/2020(81XB/81XD)</string>
+					<string>Realtek ALC257 for Lenovo XiaoXin Pro 2019/2020(81XB/81XD) </string>
 					<key>CodecID</key>
 					<integer>283902551</integer>
 					<key>ConfigData</key>
@@ -80,7 +80,7 @@
 					AwAAAA==
 					</data>
 					<key>Codec</key>
-					<string>Realtek ALC257 for Lenovo XiaoXin Pro 2019/2020(81XB/81XD)</string>
+					<string>Realtek ALC257 for Lenovo XiaoXin Pro 2019/2020(81XB/81XD) </string>
 					<key>CodecID</key>
 					<integer>283902551</integer>
 					<key>ConfigData</key>
@@ -110,7 +110,7 @@
 					AwAAAA==
 					</data>
 					<key>Codec</key>
-					<string>Realtek ALC257 for Lenovo XiaoXin Pro 2019/2020(81XB/81XD)</string>
+					<string>Realtek ALC257 for Lenovo XiaoXin Pro 2019/2020(81XB/81XD) </string>
 					<key>CodecID</key>
 					<integer>283902551</integer>
 					<key>ConfigData</key>
@@ -136,7 +136,7 @@
 					AwAAAA==
 					</data>
 					<key>Codec</key>
-					<string>Realtek ALC257 for Lenovo XiaoXin Pro 2019/2020(81XB/81XD)</string>
+					<string>Realtek ALC257 for Lenovo XiaoXin Pro 2019/2020(81XB/81XD) </string>
 					<key>CodecID</key>
 					<integer>283902551</integer>
 					<key>ConfigData</key>
