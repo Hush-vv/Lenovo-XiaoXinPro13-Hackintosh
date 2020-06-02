@@ -25,7 +25,7 @@ Lenovo XiaoXinPro13 Hackintosh
 - 小新由于安装过程中触摸板可能无法驱动，使用U盘安装macOS会占用仅仅一个USB接口,建议安装之前先买个usb拓展,用于插入鼠标,来进行安装步骤选项设定。
 - 安装或更新系统完成后请使用`终端`输入`sudo kextcache -i /`清理缓存并重启，触控板才能正常使用
 
-### BISO设置 
+### BISO设置 【重要】
 
 - 需要更新`BIOS`【重要】
   - [`BIOS`下载](https://pan.baidu.com/s/1bNwPFp6RHZvGNAaPx_IcJA) 密码: dpoe
@@ -40,7 +40,7 @@ Lenovo XiaoXinPro13 Hackintosh
   - `Secure Boot` =`Disable`
 
 
-### 配置config【重要】
+### 配置config
 
 - 使用`1820A`网卡的驱动蓝牙和WI-FI将这些`True`即可 并添加 `brcmfx-country=#a`
   - `Kernel` \ `Add` \ `18`\ `Enabled`=`True`
