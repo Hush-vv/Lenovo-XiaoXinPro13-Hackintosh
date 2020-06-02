@@ -16,7 +16,7 @@ Lenovo XiaoXinPro13 Hackintosh
 |声卡| Realtek ALC257|
 |网卡| 原装Intel AX201NGW更换为 BCM94360CS2|
 
-## 使用说明
+## 使用说明【请仔细阅读】
 
 ### 注意
 
@@ -27,28 +27,22 @@ Lenovo XiaoXinPro13 Hackintosh
 
 ### BISO设置 
 
-- BIOS 版本:  `CLCN32WW`
-  - `Fn+F2`进入`BIOS`,
-  - 先查看 `Information`：`Secure Boot` 是否为 `Disabled`;
-  - 如果 `Secure Boot` 是 `Enabled`，选择左边到 `Security`： 设置 `Secure Boot` 为 `Disabled`;
-  - `Fn+F10` 保存设置
+- 需要更新`BIOS`【重要】
+  - [`BIOS`下载](https://pan.baidu.com/s/1bNwPFp6RHZvGNAaPx_IcJA) 密码: dpoe
+
+- 解锁 `DVMT` 、 `CFG` 【或参考@Donald 《修改DVMT Pre-Allocated数值方法》】
+  - `DVMT` =`64M`;位置:`Advanced` ->` System Agent` -> `Graphics Configura` -> `DVMT Pre- Allocated` 【重要】
+  - `CFG` =`disable`;位置:`Advanced` -> `Power Performanc` -> `CPU Power Manage` -> `CPU Lock Configura`【重要】
+  
+- `Security `【重要】
+  - `Intel Platform Trust Technology `= `Disable`
+  - `Intel SGX Control` = `Disable` 【建议】
+  - `Secure Boot` =`Disable`
+
 
 ### 配置config【重要】
 
-- 已修改BIOS`DVMT`机器可删除以下内容
-
-  - `Kernel` \ `Patch` \ `item0`
-  - `Kernel` \ `Patch` \ `item1`
-  - `PciRoot(0x0)/Pci(0x2,0x0)`\ `framebuffer-fbmem` = `00009000`
-  - `PciRoot(0x0)/Pci(0x2,0x0)`\ `framebuffer-stolenmem` = `00003001`
-  
-- 已解锁BIOS`CFG LOCK`机器将以下内容`False` 即可
-
-  - `Kernel` \ `Quirks` \ `AppleXcpmCfgLock`=`False`
-  - `Kernel` \ `Quirks` \ `AppleXcpmExtraMsrs`=`False` 
-    
 - 使用`1820A`网卡的驱动蓝牙和WI-FI将这些`True`即可 并添加 `brcmfx-country=#a`
-
   - `Kernel` \ `Add` \ `18`\ `Enabled`=`True`
   - `Kernel` \ `Add` \ `19`\ `Enabled`=`True`
   - `Kernel` \ `Add` \ `20`\ `Enabled`=`True`
@@ -56,21 +50,15 @@ Lenovo XiaoXinPro13 Hackintosh
   - `NVRAM` \ `Add` \ `7C436110-AB2A-4BBB-A880-FE41995C9F82` \ `boot-args` \ `brcmfx-country=#a`
  
 - 部分`i5`机型可删除以下内容
-
-  - `Kernel` \ `Patch` \ `item0`
-  - `Kernel` \ `Patch` \ `item1`
   - `Kernel`\ `Emulate`\ `Cpuid1Data`
   - `Kernel`\ `Emulate`\ `Cpuid1Mask`  
 
 ### 安装失败注意
 
-- 强烈建议解锁BIOS`CFG LOCK`、 修改BIOS`DVMT`以避免安装时卡住。解锁方法请参考群文件`小新PRO13修改DVMT说明` 
-
 - 安装系统时请在BIOS中禁用无线网卡，安装成功后在打开。避免因网卡问题导致安装失败
   - 一些网卡需要屏蔽针脚，方法请自行百度
    
 - 安装`macOS Catalina10.15.4`过程中可能无法驱动核显，导致引导失败重启回引导页面，临时解决方法
-  
   - `DeviceProperties` \ `Add` \ `PciRoot(0x0)/Pci(0x2,0x0)`\ `AAPL,ig-platform-id`=`12345678` 安装成功后恢复即可
 
 ### 关闭触摸板快捷键
@@ -101,9 +89,9 @@ Lenovo XiaoXinPro13 Hackintosh
 
 ### EFI下载
 
-- [OpenCore 0.5.8正式版](https://github.com/Hush-vv/Lenovo-XiaoXinPro13-Hackintosh/releases/download/v1.0/EFI-OC.zip)
+- [OpenCore 正式版](https://github.com/Hush-vv/Lenovo-XiaoXinPro13-Hackintosh/releases)
 
-- [OpenCore 0.5.9开发版](https://github.com/Hush-vv/Lenovo-XiaoXinPro13-Hackintosh/archive/master.zip)
+- [OpenCore 开发版](https://github.com/Hush-vv/Lenovo-XiaoXinPro13-Hackintosh/archive/master.zip)
    
 - Clover[请移驾daliansky](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
         
