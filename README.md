@@ -7,7 +7,7 @@ Lenovo XiaoXinPro13 Hackintosh
 |规格 | 详细信息|
 |:-: | :-:|
 |电脑型号|联想小新pro13 笔记本电脑|
-|操作系统|macOS Catalina 10.15.x |
+|操作系统| macOS Big Sur |
 |处理器|英特尔 酷睿 i7-10710U|
 |内存|16GB板载无法更换|
 |硬盘|原装 三星981A 512GB 更换为 三星970 evo 1TB |
@@ -38,28 +38,6 @@ Lenovo XiaoXinPro13 Hackintosh
   - `Intel Platform Trust Technology `= `Disable`
   - `Intel SGX Control` = `Disable` 【建议】
   - `Secure Boot` =`Disable`
-
-
-### 配置config
-
-- 使用`1820A`网卡的驱动蓝牙和WI-FI将这些`True`即可 并添加 `brcmfx-country=#a`
-  - `Kernel` \ `Add` \ `18`\ `Enabled`=`True`
-  - `Kernel` \ `Add` \ `19`\ `Enabled`=`True`
-  - `Kernel` \ `Add` \ `20`\ `Enabled`=`True`
-  - `Kernel` \ `Add` \ `21`\ `Enabled`=`True`
-  - `NVRAM` \ `Add` \ `7C436110-AB2A-4BBB-A880-FE41995C9F82` \ `boot-args` \ `brcmfx-country=#a`
- 
-- 部分`i5`机型可删除以下内容
-  - `Kernel`\ `Emulate`\ `Cpuid1Data`
-  - `Kernel`\ `Emulate`\ `Cpuid1Mask`  
-
-### 安装失败注意
-
-- 安装系统时请在BIOS中禁用无线网卡，安装成功后在打开。避免因网卡问题导致安装失败
-  - 一些网卡需要屏蔽针脚，方法请自行百度
-   
-- 安装`macOS Catalina10.15.4`过程中可能无法驱动核显，导致引导失败重启回引导页面，临时解决方法
-  - `DeviceProperties` \ `Add` \ `PciRoot(0x0)/Pci(0x2,0x0)`\ `AAPL,ig-platform-id`=`12345678` 安装成功后恢复即可
 
 ### 关闭触摸板快捷键
 
