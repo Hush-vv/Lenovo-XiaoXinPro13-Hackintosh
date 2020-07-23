@@ -955,7 +955,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 -lilubeta rtcfx_exclude=80-AB,B0-B4 -v</string>
+				<string>keepsyms=1 -lilubeta -vsmcbeta rtcfx_exclude=80-AB,B0-B4 -v vsmcgen=1</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>nvda_drv</key>
@@ -1000,17 +1000,17 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>FVF030200QX0000CB</string>
+			<string>M0000000000000001</string>
 			<key>ROM</key>
-			<data>CJn1X/Do</data>
+			<data>ESIzRFVm</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>MacBookAir9,1</string>
+			<string>MacBookAir16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFD4YYAMNHP</string>
+			<string>W00000000001</string>
 			<key>SystemUUID</key>
-			<string>2FB16470-55B9-489F-AA42-D379385FF0E8</string>
+			<string>00000000-0000-0000-0000-000000000000</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1061,16 +1061,6 @@
 		<array>
 			<string>HfsPlus.efi</string>
 			<string>OpenRuntime.efi</string>
-			<string>#OpenCanopy.efi</string>
-			<string>#AudioDxe.efi</string>
-			<string>#OpenUsbKbDxe.efi</string>
-			<string>#UsbMouseDxe.efi</string>
-			<string>#Ps2KeyboardDxe.efi</string>
-			<string>#Ps2MouseDxe.efi</string>
-			<string>#HiiDatabase.efi</string>
-			<string>#NvmExpressDxe.efi</string>
-			<string>#XhciDxe.efi</string>
-			<string>#ExFatDxe.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
