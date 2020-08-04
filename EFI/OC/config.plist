@@ -7,100 +7,156 @@
 		<key>Add</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-EC.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-RTC_Y-AWAC_N.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-RTC_Y-AWAC_N.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>OCPublic-Merge</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-OCPublic-Merge.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>X86</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-PLUG-_SB.PR00.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>PNLF</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-PNLF-CFL.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SBUS</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-SBUS.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-PMCR.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-PMCR.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-BKeyQ38Q39-LenovoPRO13.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-BKeyQ38Q39-LenovoPRO13.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-OCBAT1-lenovoPRO13.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-OCBAT1-lenovoPRO13.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-CB-01_XHC.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-CB-01_XHC.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-NameS3-disable.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-NameS3-disable.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-DeepIdle.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-DeepIdle.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-I2CxConf.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-I2CxConf.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-OCI2C-TPXX-lenovoPRO13.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-OCI2C-TPXX-lenovoPRO13.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-NDGP_OFF-AOAC.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-NDGP_OFF-AOAC.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-RMCF-PS2Map-LenovoPRO13.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-RMCF-PS2Map-LenovoPRO13.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-GPRW.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-GPRW.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>SSDT-PCI0.LPCB-Wake-AOAC.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-PCI0.LPCB-Wake-AOAC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-BATS.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-BATS.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -305,6 +361,19 @@
 				<data></data>
 			</dict>
 		</array>
+		<key>Quirks</key>
+		<dict>
+			<key>FadtEnableReset</key>
+			<false/>
+			<key>NormalizeHeaders</key>
+			<false/>
+			<key>RebaseRegions</key>
+			<false/>
+			<key>ResetHwSig</key>
+			<false/>
+			<key>ResetLogoStatus</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>Booter</key>
 	<dict>
@@ -552,16 +621,6 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>RTCMemoryFixup.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/RTCMemoryFixup</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
 		</array>
 		<key>Emulate</key>
 		<dict>
@@ -571,7 +630,36 @@
 			<data>/////wAAAAAAAAAAAAAAAA==</data>
 		</dict>
 		<key>Patch</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Base</key>
+				<string>__ZN8AppleRTC18setupDateTimeAlarmEPK11RTCDateTime</string>
+				<key>Comment</key>
+				<string>Disable RTC wake scheduling</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data></data>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleRTC</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>19.0.0</string>
+				<key>Replace</key>
+				<data>ww==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+		</array>
 	</dict>
 	<key>Misc</key>
 	<dict>
@@ -684,7 +772,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 -lilubeta -vsmcbeta rtcfx_exclude=80-AB,B0-B4 -v</string>
+				<string>keepsyms=1 -v</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>nvda_drv</key>
