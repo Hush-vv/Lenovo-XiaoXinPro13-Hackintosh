@@ -892,10 +892,7 @@
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
-			<key>AppleSecureBoot
-Type: plist boolean
-Failsafe: false
-Description: Reinstalls Apple Secure Boot protocol with a builtin version.</key>
+			<key>AppleSecureBoot</key>
 			<true/>
 			<key>AppleImg4Verification</key>
 			<true/>
