@@ -670,7 +670,7 @@
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HideAuxiliary</key>
-			<true/>
+			<false/>
 			<key>PickerAttributes</key>
 			<integer>1</integer>
 			<key>PickerAudioAssist</key>
@@ -692,8 +692,6 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
-			<key>ApECID</key>
-			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
 			<key>BootProtect</key>
@@ -703,11 +701,13 @@
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>ScanPolicy</key>
-			<integer>17760515</integer>
+			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>j230k</string>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
+			<key>ApECID</key>
+			<integer>0</integer>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -817,17 +817,17 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>FVF004405GU00001M</string>
+			<string>FVF039301J900001M</string>
 			<key>ROM</key>
-			<data>Wup8x9UX</data>
+			<data>DCeWUGAX</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookAir9,1</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFC57Y7MNHP</string>
+			<string>FVFDGKYZMNHP</string>
 			<key>SystemUUID</key>
-			<string>17270DCB-F011-4DE0-99CC-EA161496E35C</string>
+			<string>C5C18CA3-C6DC-4A0C-95AE-426D16506017</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -893,11 +893,11 @@
 		<key>ProtocolOverrides</key>
 		<dict>
 			<key>AppleSecureBoot</key>
-			<true/>
+			<false/>
 			<key>AppleImg4Verification</key>
-			<true/>
+			<false/>
 			<key>AppleSmcIo</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Quirks</key>
 		<dict>
