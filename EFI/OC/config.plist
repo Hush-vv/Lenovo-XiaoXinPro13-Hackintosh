@@ -692,10 +692,14 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
+			<key>ApECID</key>
+			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
 			<key>BootProtect</key>
 			<string>None</string>
+			<key>DmgLoading</key>
+			<string>Signed</string>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
 			<key>HaltLevel</key>
@@ -706,8 +710,6 @@
 			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
-			<key>ApECID</key>
-			<integer>0</integer>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -814,20 +816,18 @@
 		<true/>
 		<key>Generic</key>
 		<dict>
-			<key>AdviseWindows</key>
-			<false/>
 			<key>MLB</key>
-			<string>FVF039301J900001M</string>
+			<string>FVF035102GU00001M</string>
 			<key>ROM</key>
-			<data>DCeWUGAX</data>
+			<data>AkkGaT3D</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookAir9,1</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFDGKYZMNHP</string>
+			<string>FVFD908TMNHP</string>
 			<key>SystemUUID</key>
-			<string>C5C18CA3-C6DC-4A0C-95AE-426D16506017</string>
+			<string>CE2DA1BD-480B-4111-9EA1-B4EA0A91CE74</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -897,7 +897,7 @@
 			<key>AppleImg4Verification</key>
 			<false/>
 			<key>AppleSmcIo</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Quirks</key>
 		<dict>
