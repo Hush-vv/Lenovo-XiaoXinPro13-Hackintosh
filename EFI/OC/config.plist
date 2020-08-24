@@ -104,19 +104,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-I2CxConf.aml</string>
+				<string>SSDT-OCI2C-TPXX-lenovoPRO13.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-I2CxConf.aml</string>
+				<string>SSDT-OCI2C-TPXX-lenovoPRO13.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-OCI2C-TPXX-lenovoPRO13.aml</string>
+				<string>SSDT-I2CxConf.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-OCI2C-TPXX-lenovoPRO13.aml</string>
+				<string>SSDT-I2CxConf.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -152,11 +152,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-BATS.aml</string>
+				<string>SSDT-BATS-PRO13.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-BATS.aml</string>
+				<string>SSDT-BATS-PRO13.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -360,6 +360,32 @@
 				<key>TableSignature</key>
 				<data></data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_DSM to XDSM</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X0RTTQ==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>TnZkVGFibGU=</data>
+				<key>Replace</key>
+				<data>WERTTQ==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>U1NEVA==</data>
+			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -555,7 +581,7 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
+				<string>VoodooI2C-10th.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -565,7 +591,7 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext</string>
+				<string>VoodooI2C-10th.kext/Contents/PlugIns/VoodooGPIO.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -575,7 +601,7 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
+				<string>VoodooI2C-10th.kext/Contents/PlugIns/VoodooInput.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -585,7 +611,7 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooI2C.kext</string>
+				<string>VoodooI2C-10th.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -600,24 +626,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooI2CHID</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>FakePCIID.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/FakePCIID</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>FakePCIID_Intel_HDMI_Audio.kext</string>
-				<key>Enabled</key>
-				<true/>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -790,7 +798,7 @@
 				<key>boot-args</key>
 				<string>keepsyms=1 -v</string>
 				<key>csr-active-config</key>
-				<data>5wMAAA==</data>
+				<data>5wsAAA==</data>
 				<key>nvda_drv</key>
 				<data>MA==</data>
 				<key>prev-lang:kbd</key>
