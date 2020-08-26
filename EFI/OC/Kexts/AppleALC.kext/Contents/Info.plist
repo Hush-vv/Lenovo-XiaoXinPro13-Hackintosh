@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>20A5343i</string>
+	<string>20A5354i</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -2596,7 +2596,7 @@
 					AwAAAA==
 					</data>
 					<key>Codec</key>
-					<string>MacPeet - Realtek ALC257 for Lenovo T480</string>
+					<string>Realtek ALC257 for Lenovo XiaoXin Pro 2019&amp;2020</string>
 					<key>CodecID</key>
 					<integer>283902551</integer>
 					<key>ConfigData</key>
