@@ -158,6 +158,14 @@
 				<key>Path</key>
 				<string>SSDT-BATS-PRO13.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-HPET-disable.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-HPET-disable.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -396,7 +404,7 @@
 			<key>RebaseRegions</key>
 			<false/>
 			<key>ResetHwSig</key>
-			<false/>
+			<true/>
 			<key>ResetLogoStatus</key>
 			<false/>
 		</dict>
@@ -1280,7 +1288,7 @@
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<false/>
+			<true/>
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>TscSyncTimeout</key>
