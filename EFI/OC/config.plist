@@ -534,7 +534,7 @@
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
-				<string>Patch engine</string>
+				<string>Lilu</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -552,7 +552,7 @@
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
-				<string>SMC emulator</string>
+				<string>SMC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -570,7 +570,7 @@
 				<key>BundlePath</key>
 				<string>SMCBatteryManager.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Battery</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -588,7 +588,7 @@
 				<key>BundlePath</key>
 				<string>SMCLightSensor.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Light Sensor</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -606,7 +606,7 @@
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Prosessor</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -624,7 +624,7 @@
 				<key>BundlePath</key>
 				<string>SMCSuperIO.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>SuperIO</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -642,7 +642,7 @@
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Video card</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -660,7 +660,7 @@
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Sound</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -678,7 +678,7 @@
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>PS2Controller</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -696,7 +696,7 @@
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Keyboard</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -714,7 +714,7 @@
 				<key>BundlePath</key>
 				<string>VoodooI2C-10th.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>I2CServices</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -732,7 +732,7 @@
 				<key>BundlePath</key>
 				<string>VoodooI2C-10th.kext/Contents/PlugIns/VoodooGPIO.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>GPIO</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -750,7 +750,7 @@
 				<key>BundlePath</key>
 				<string>VoodooI2C-10th.kext/Contents/PlugIns/VoodooInput.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>VoodooInput</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -768,7 +768,7 @@
 				<key>BundlePath</key>
 				<string>VoodooI2C-10th.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>I2C</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -786,7 +786,7 @@
 				<key>BundlePath</key>
 				<string>VoodooI2CHID.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>I2CHID</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>

@@ -6,15 +6,15 @@ Lenovo XiaoXinPro13 Hackintosh
 ## 电脑配置
 |规格 | 详细信息|
 |:-: | :-:|
-|电脑型号|联想小新pro13 笔记本电脑|
+|电脑型号| 联想小新pro13 2019笔记本电脑 |
 |操作系统| macOS Big Sur |
-|处理器|英特尔 酷睿 i7-10710U|
-|内存|16GB板载无法更换|
-|硬盘|原装 三星981A 512GB 更换为 三星970 evo 1TB |
-|显卡|Intel HD Graphics CFL CRB|（UHD620）|
-|显示器|13.3 英寸 IPS 2560x1600 华星光电|
-|声卡| Realtek ALC257|
-|网卡| 原装Intel AX201NGW更换为 BCM94360CS2|
+|处理器| 英特尔 酷睿 i7-10710U |
+|内存| 16GB板载无法更换 |
+|硬盘|原装 ~~三星981A 512GB~~ 更换为 三星970 evo 1TB |
+|显卡| Intel HD Graphics CFL CRB（UHD620）|
+|显示器| 13.3 英寸 IPS 2560x1600 华星光电 |
+|声卡| Realtek ALC257 |
+|网卡| 原装~~Intel AX201NGW~~ 更换为 BCM94360CS2 |
 
 ## 使用说明【请仔细阅读】
 
@@ -84,7 +84,7 @@ Lenovo XiaoXinPro13 Hackintosh
     ......
 
 ### QQ群
-- 小新pro黑苹果 946132482（已满）
+- 小新pro黑苹果 946132482
     
 - 小新pro13insyde bios研究交流 635160015
         
