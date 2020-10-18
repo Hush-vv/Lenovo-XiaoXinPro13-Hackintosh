@@ -734,13 +734,13 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>AppleBacklightSmoother.kext</string>
+				<string>BrightnessKeys.kext</string>
 				<key>Comment</key>
-				<string>AppleBacklightSmoother</string>
+				<string>BrightnessKeys</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AppleBacklightSmoother</string>
+				<string>Contents/MacOS/BrightnessKeys</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -752,13 +752,13 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>BrightnessKeys.kext</string>
+				<string>AppleBacklightSmoother.kext</string>
 				<key>Comment</key>
-				<string>BrightnessKeys</string>
+				<string>AppleBacklightSmoother</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BrightnessKeys</string>
+				<string>Contents/MacOS/AppleBacklightSmoother</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1077,7 +1077,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>igfxcflbklt=0 -v</string>
+				<string>igfxcflbklt=0 -applbklsmoothbeta -v</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
@@ -1120,6 +1120,8 @@
 	<dict>
 		<key>Automatic</key>
 		<true/>
+		<key>CustomMemory</key>
+		<false/>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
