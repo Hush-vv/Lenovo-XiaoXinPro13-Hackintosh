@@ -961,6 +961,8 @@
 				<string>U-Win10</string>
 				<key>Path</key>
 				<string>PciRoot(0x0)/Pci(0x14,0x0)/USB(0xF,0x0)/USB(0x1,0x0)/HD(1,GPT,86A2AF4A-9044-4BEF-AA82-0EB074533A3C,0x28,0x64000)/\EFI-win10\Microsoft\Boot\bootmgfw.efi</string>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 		</array>
 		<key>Security</key>
@@ -1009,6 +1011,10 @@
 				<string>Shutdown</string>
 				<key>Path</key>
 				<string>ResetSystem.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1023,6 +1029,10 @@
 				<string>UEFI Shell</string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1037,6 +1047,10 @@
 				<string>CleanNvram</string>
 				<key>Path</key>
 				<string>CleanNvram.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>

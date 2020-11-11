@@ -7,7 +7,7 @@ Lenovo XiaoXinPro13 Hackintosh
 |规格 | 详细信息|
 |:-: | :-:|
 |电脑型号| 联想小新pro13 2019笔记本电脑 |
-|操作系统| macOS Big Sur |
+|操作系统| macOS Big Sur 11.0.1（20B28）|
 |处理器| 英特尔 酷睿 i7-10710U |
 |内存| 16GB板载无法更换 |
 |硬盘|原装 ~~三星981A 512GB~~ 更换为 三星970 evo 1TB |
