@@ -15,6 +15,7 @@ Lenovo XiaoXinPro13 Hackintosh
 |显示器| 13.3 英寸 IPS 2560x1600 华星光电 |
 |声卡| Realtek ALC257 |
 |网卡| 原装~~Intel AX201NGW~~ 更换为 BCM94360CS2 |
+|SMBIOS| MacBook Air 9.1 |
 
 ## 使用说明【请仔细阅读】
 
@@ -38,6 +39,13 @@ Lenovo XiaoXinPro13 Hackintosh
   - `Intel Platform Trust Technology `= `Disable`
   - `Intel SGX Control` = `Disable` 【建议】
   - `Secure Boot` =`Disable`
+
+### SMBIOS
+
+- 默认 `MacBook Air 9.1`
+  - 使用其它机型`SMBIOS`时请修改`USBPorts.kext`-`Contents`-`Info.plist`
+  
+  ![USBPorts.kext](Docs/IMG_0001.png)
 
 ### 关闭触摸板快捷键
 
