@@ -450,6 +450,8 @@
 				<data>AP///////wAOb20HAAAAABQdAQSQHRJ44u6Vo1RMmSYPUFQAAAABAQEBAQEBAQEBAQEBAQEB7GgAoKBALmAwIDYAHrMQAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gBDU09UIFQzCiAgICAgAAAA/gBNTkQzMDdEQTEtMgogAF0=</data>
 				<key>dpcd-max-link-rate</key>
 				<data>CgAAAA==</data>
+				<key>enable-backlight-registers-fix</key>
+				<data>AQAAAA==</data>
 				<key>enable-dpcd-max-link-rate-fix</key>
 				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
@@ -1328,8 +1330,6 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DeduplicateBootOrder</key>
-			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
