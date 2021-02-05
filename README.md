@@ -42,7 +42,7 @@ Lenovo XiaoXinPro13 Hackintosh
 
 ### SMBIOS
 
-- 默认 `MacBook Air 9.1`
+- 默认 `MacBookPro16,2`
   - 使用其它机型`SMBIOS`时请修改`USBPorts.kext`-`Contents`-`Info.plist`
   
   ![USBPorts.kext](Docs/IMG_0001.png)
