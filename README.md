@@ -15,7 +15,7 @@ Lenovo XiaoXinPro13 Hackintosh
 |显示器| 13.3 英寸 IPS 2560x1600 华星光电 |
 |声卡| Realtek ALC257 |
 |网卡| 原装~~Intel AX201NGW~~ 更换为 BCM94360CS2 |
-|SMBIOS| MacBook Air 9.1 |
+|SMBIOS| MacBookPro16,2 |
 
 ## 使用说明【请仔细阅读】
 
