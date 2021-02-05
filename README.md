@@ -87,8 +87,7 @@ Lenovo XiaoXinPro13 Hackintosh
 - 感谢PS@Donald提供的解锁`DVMT` `CFG lock`工具
 - 感谢群友QQ876310253提供的`解锁dvmt及cfglock.docx`教程    
 - 感谢群友Dreamn提供的[`SleepWithoutBluetoothAndWifi`](https://github.com/dreamncn/SleepWithoutBluetoothAndWifi)工具        
-- @Bat.bat [自动化 OpenCore 编译，每 8 小时刷新一次](https://github.com/williambj1/OpenCore-Factory/releases)
-    
+
     ......
 
 ### QQ群
