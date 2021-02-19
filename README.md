@@ -7,7 +7,7 @@ Lenovo XiaoXinPro13 Hackintosh
 |规格 | 详细信息|
 |:-: | :-:|
 |电脑型号| 联想小新pro13 2019笔记本电脑 |
-|操作系统| macOS Big Sur 11.0.1（20B29）|
+|操作系统| macOS Big Sur 11.3 Beta版(20E5186d)|
 |处理器| 英特尔 酷睿 i7-10710U |
 |内存| 16GB板载无法更换 |
 |硬盘|原装 ~~三星981A 512GB~~ 更换为 三星970 evo 1TB |
@@ -16,6 +16,7 @@ Lenovo XiaoXinPro13 Hackintosh
 |声卡| Realtek ALC257 |
 |网卡| 原装~~Intel AX201NGW~~ 更换为 BCM94360CS2 |
 |SMBIOS| MacBookPro16,2 |
+|![SMBIOS](Docs/IMG_0002.png)|
 
 ## 使用说明【请仔细阅读】
 
@@ -43,9 +44,9 @@ Lenovo XiaoXinPro13 Hackintosh
 ### SMBIOS
 
 - 默认 `MacBookPro16,2`
-  - 使用其它机型`SMBIOS`时请修改`USBPorts.kext`-`Contents`-`Info.plist`
+  - 使用其它机型`SMBIOS`时请修改`USBMap.kext`-`Contents`-`Info.plist`
   
-  ![USBPorts.kext](Docs/IMG_0001.png)
+  ![USBMap.kext](Docs/IMG_0001.png)
 
 ### 关闭触摸板快捷键
 
