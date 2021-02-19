@@ -5,13 +5,13 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.0 Copyright © 2018-2020 Headsoft. All rights reserved.</string>
+	<string>v1.0</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.Headsoft.USBPorts</string>
+	<string>com.dortania.USBmap</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>USBPorts</string>
+	<string>USBMap</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
@@ -22,30 +22,18 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>MacBookPro16,2-XHC</key>
+		<key>XHCI-XHCI</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
 			<key>IOClass</key>
 			<string>AppleUSBMergeNub</string>
-			<key>IONameMatch</key>
-			<string>XHC</string>
-			<key>IOPCIPrimaryMatch</key>
-			<string>0x02ed8086</string>
-			<key>IOProbeScore</key>
-			<integer>5000</integer>
+			<key>IOPathMatch</key>
+			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/XHC@14/XHC@14000000</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
-				<key>kUSBSleepPortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBSleepPowerSupply</key>
-				<integer>2600</integer>
-				<key>kUSBWakePortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBWakePowerSupply</key>
-				<integer>3200</integer>
 				<key>port-count</key>
 				<data>EAAAAA==</data>
 				<key>ports</key>
@@ -54,8 +42,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
-						<key>name</key>
-						<string>HS01</string>
 						<key>port</key>
 						<data>AQAAAA==</data>
 					</dict>
@@ -63,8 +49,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
-						<key>name</key>
-						<string>HS03</string>
 						<key>port</key>
 						<data>AwAAAA==</data>
 					</dict>
@@ -72,8 +56,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
-						<key>name</key>
-						<string>HS04</string>
 						<key>port</key>
 						<data>BAAAAA==</data>
 					</dict>
@@ -81,8 +63,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>name</key>
-						<string>HS07</string>
 						<key>port</key>
 						<data>BwAAAA==</data>
 					</dict>
@@ -90,8 +70,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
-						<key>name</key>
-						<string>HS10</string>
 						<key>port</key>
 						<data>CgAAAA==</data>
 					</dict>
@@ -99,8 +77,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>name</key>
-						<string>SS01</string>
 						<key>port</key>
 						<data>DQAAAA==</data>
 					</dict>
@@ -108,8 +84,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
-						<key>name</key>
-						<string>SS02</string>
 						<key>port</key>
 						<data>DgAAAA==</data>
 					</dict>
@@ -117,8 +91,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
-						<key>name</key>
-						<string>SS04</string>
 						<key>port</key>
 						<data>EAAAAA==</data>
 					</dict>
