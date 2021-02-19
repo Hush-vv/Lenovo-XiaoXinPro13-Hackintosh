@@ -16,7 +16,8 @@ Lenovo XiaoXinPro13 Hackintosh
 |声卡| Realtek ALC257 |
 |网卡| 原装~~Intel AX201NGW~~ 更换为 BCM94360CS2 |
 |SMBIOS| MacBookPro16,2 |
-|![SMBIOS](Docs/IMG_0002.png)|
+
+![SMBIOS](Docs/IMG_0002.png)
 
 ## 使用说明【请仔细阅读】
 
